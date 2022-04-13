@@ -28,7 +28,7 @@ class FileServerHandler(file_server_pb2_grpc.FileServiceServicer):
         
     def start(self, port):
         server_credentials = grpc.ssl_server_credentials([(_credentials.SERVER_CERTIFICATE_KEY, _credentials.SERVER_CERTIFICATE)])
-        self.server.add_secure_port('[::]:50051', server_credentials)
+        self.server.add_secure_port('192.168.230.219:50051', server_credentials)
         print(f'Server is listening on port {port}')
         self.server.start()
         self.server.wait_for_termination()
