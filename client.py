@@ -24,7 +24,7 @@ class ClientHandler:
 
 
 if __name__ == '__main__':
-    client = ClientHandler('10.1.38.58:50051')
+    client = ClientHandler('6633-118-71-24-172.ngrok.io')
 
     # demo for file uploading
     in_file_name = 'E:\\data.xlsx'
