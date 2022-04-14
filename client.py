@@ -27,7 +27,7 @@ if __name__ == '__main__':
     client = ClientHandler('6633-118-71-24-172.ngrok.io')
 
     # demo for file uploading
-    in_file_name = 'E:\\data.xlsx'
+    in_file_name = 'image_2022_02_25T03_18_12_567Z.png'
     client.upload(in_file_name)
 
     # # demo for file downloading:
